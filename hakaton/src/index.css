@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,82 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.landing header{
+  padding: 40px 105px;
+}
+.landing main {
+  margin-top: 150px;
+}
+.landing h4{
+  font-size: 40px;
+  font-weight: 500;
+}
+.landing span{
+  font-size: 30px;
+  font-weight: 300;
+}
+.block_svg{
+gap: 100px;
+align-items: center;
+}
+.block_svg1{
+  gap: 275px;
+  align-items: center;
+  }
+section.first {
+  display: flex;
+  padding: 40px 105px;
+}
+.svg_custom{
+  position: relative;
+}
+section.second {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 105px;
+  background-color: #E672B6;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.landing * {
+  font-family: 'Inter', sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.button-start {
+  margin-top: 20px;
+  padding: 40px 100px;
+  background-color: #E672B6;
+  border-radius: 60px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.button-start::after {
+  content: url(./img/array.png);
+  position: relative;
+  left: 70px;
+}
+
+.transition_img {
+margin-top: 100px;
+}
+
+.transition_img img {
+  width: 1920px;
+}
+.transitionEnd_img img{
+width: 1920px;
+}
+section.last{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2em;
 }
