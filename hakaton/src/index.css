@@ -55,8 +55,11 @@ section.second {
   color: white;
   align-items: center;
 }
-.landing * {
+*{
   font-family: 'Inter', sans-serif;
+}
+.landing * {
+  
   font-size: 70px;
   font-weight: 700;
 }
@@ -70,6 +73,7 @@ section.second {
   color: white;
   display: flex;
   align-items: center;
+  width: max-content;
 }
 
 .button-start::after {

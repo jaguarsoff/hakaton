@@ -15,84 +15,84 @@ function Landing() {
   return (
     <>
 
-      <div className="landing">
-        <header>
-          <img src={logo} alt="" />
-        </header>
-        <main>
-          <section className="first">
-            <div className="left">
-              <h1>«Monorts»: <br />
-                Инновации путь в будущее!</h1>
-              <Link className='button-start' to='/development'>Начать работу </Link>
-            </div>
-            <div className="right"><img src={fond} alt="" width="1200" /></div>
-          </section>
-          <div className="transition_img">
-            <img src={transition} alt="" />
+<div className="landing">
+      <header className="p-10">
+        <img src={logo} alt="" />
+      </header>
+      <main className="mt-20">
+        <section className="first flex p-10">
+          <div className="left">
+            <h1 className="text-5xl">
+              «Monorts»: <br />
+              Инновации путь в будущее!
+            </h1>
+            <Link to="/login" className='button-start mt-8'>Начать работу </Link>
           </div>
-          <section className='second'>
-            <h1> Monorts — это</h1>
-            <img
-              src={first_array}
-              alt=""
-              className='svg_custom'
-              style={{
-                width: '1000px',
-                top: '-50px'
-              }}
-            />
-            <div className="flex block_svg">
-              <img src={first_svg} alt="" className='svg_custom' />
-              <div className="flex flex-col">
-                <h4>Мониторинг компаний</h4>
-                <span>Возможность мониторинга финансовых <br /> состояний компаний</span>
-              </div>
-            </div>
-            <img src={second_array} alt="" className='svg_custom' style={{
-              position: "relative",
-              width: '600px'
-            }} />
-            <div className="flex block_svg1" style={{
-              position: "relative",
-              top: '-200px'
-            }}>
-              <div className="flex flex-col" >
-                <h4 style={{ textAlign: 'right' }}>Дорожная карта </h4>
-                <span style={{ textAlign: 'right' }}>Отслеживание этапов реализации <br /> проектов компаний</span>
-              </div>
-              <img src={second_svg} alt="" className='svg_custom' />
-
-            </div>
-
-            <img src={third_array} alt="" className='svg_custom' style={{
-              position: "relative",
-              top: "-200px",
-              width: "1000px"
-            }} />
-            <div className="flex block_svg" style={{
-              position: "relative",
-              top: "-200px",
-            }}>
-              <img src={third_svg} alt="" className='svg_custom' />
-              <div className="flex flex-col">
-                <h4>Квалифицированные
-                  педагоги и специалисты</h4>
-                <span style={{ maxWidth: "900px" }}>Педагоги «Смены» помогают каждому ребенку
-                  развить творческий и интеллектуальный
-                  потенциал, научиться командной работе</span>
-              </div>
-            </div>
-
-          </section>
-          <div className="transitionEnd_img">
-            <img src={transitionEnd} alt="" />
+          <div className="right">
+            <img src={fond} alt="" width="1200" />
           </div>
-          <section className='last'>
-          <Link className='button-start' to='/development'>Начать работу </Link>
-          </section>
-        </main>
-      </div>
+        </section>
+        <div className="transition_img mt-10">
+          <img src={transition} alt="" />
+        </div>
+        <section className='second flex flex-col p-10 bg-purple-700 justify-center items-center text-white'>
+          <h1 className="text-5xl">Monorts — это</h1>
+          <img
+            src={first_array}
+            alt=""
+            className='svg_custom'
+            style={{
+              width: '1000px',
+              top: '-50px'
+            }}
+          />
+          <div className="flex block_svg gap-10 items-center">
+            <img src={first_svg} alt="" className='svg_custom' />
+            <div className="flex flex-col">
+              <h4 className="text-2xl">Мониторинг компаний</h4>
+              <span>Возможность мониторинга финансовых <br /> состояний компаний</span>
+            </div>
+          </div>
+          <img src={second_array} alt="" className='svg_custom' style={{
+            position: "relative",
+            width: '600px'
+          }} />
+          <div className="flex block_svg1 items-center" style={{
+            position: "relative",
+            top: '-200px'
+          }}>
+            <div className="flex flex-col" >
+              <h4 className="text-2xl" style={{ textAlign: 'right' }}>Дорожная карта </h4>
+              <span style={{ textAlign: 'right' }}>Отслеживание этапов реализации <br /> проектов компаний</span>
+            </div>
+            <img src={second_svg} alt="" className='svg_custom' />
+          </div>
+          <img src={third_array} alt="" className='svg_custom' style={{
+            position: "relative",
+            top: "-200px",
+            width: "1000px"
+          }} />
+          <div className="flex block_svg items-center" style={{
+            position: "relative",
+            top: "-200px",
+          }}>
+            <img src={third_svg} alt="" className='svg_custom' />
+            <div className="flex flex-col">
+              <h4 className="text-2xl">Квалифицированные педагоги и специалисты</h4>
+              <span style={{ maxWidth: "900px" }}>Педагоги «Смены» помогают каждому ребенку
+                развить творческий и интеллектуальный
+                потенциал, научиться командной работе</span>
+            </div>
+          </div>
+        </section>
+        <div className="transitionEnd_img">
+          <img src={transitionEnd} alt="" />
+        </div>
+        <section className='last flex justify-center items-center p-8'>
+          <Link to='/login' className='button-start'>Начать работу </Link>
+        </section>
+      </main>
+    </div>
     </>
 
   );
