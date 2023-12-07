@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+
 import Header from './Panel/Header';
+import Sidebar from './Panel/Sidebar';
+import Content from './Panel/Content';
+
 function Panel() {
-    
-
-   
-
-    return (
-        <div className="panel">
-            <Header></Header>
-        </div>
-    );
+  return (
+    <div className="panel">
+      <Header></Header>
+      <div className="flex">
+        <Sidebar />
+        <Content />
+      </div>
+    </div>
+  );
 }
 
 export default Panel;

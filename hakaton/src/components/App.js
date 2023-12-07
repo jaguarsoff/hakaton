@@ -10,7 +10,7 @@ import Login from './Panel/login';
 import Panel from './Panel';
 import Profile from './Panel/Profile';
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // !value
 
   useEffect(() => {
     const authToken = Cookies.get('authToken');
@@ -34,7 +34,7 @@ function App() {
         setIsLoggedIn(false);
       }
     } else {
-      setIsLoggedIn(false);
+      setIsLoggedIn(false); // !value
     }
   }, []);
 
