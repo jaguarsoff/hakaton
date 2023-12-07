@@ -7,6 +7,7 @@ import success from '../../img/success.svg';
 import Cookies from 'js-cookie';
 import tg from '../../img/tg.png';
 import { jwtDecode } from 'jwt-decode';
+import download from '../../img/download.png';
 
 const ProfileContent = () => {
     const { login } = useParams();
@@ -88,6 +89,15 @@ const ProfileContent = () => {
                 console.error('Error submitting:', error);
             });
     };
+    function ReplacePath(path){
+        var normalizedPath = path.replace(/\\/g, '/');
+
+        // Получаем имя файла из пути
+        var fileName = normalizedPath.split('/').pop();
+    
+        // Создаем относительный URL для ссылки
+        return '/files/uploads/' + fileName;
+    }
     return (
         <div className="relative bg-[#EFEFEF] w-full h-screen rounded-tl-[80px] p-[50px]">
             {!isMyProfile && (
@@ -142,7 +152,8 @@ const ProfileContent = () => {
                                                 {fileInfo.status === 'success' && <img src={success} alt="Status 3" />}
                                             </li>
 
-                                            <li className="min-w-[150px] flex items-center">
+                                            <li className="min-w-[150px] flex items-center gap-[15px]">
+                                                <a href={ReplacePath(fileInfo.path)} download><img src={download} alt="" className="max-w-[40px] max-h-[40px]"/></a>
                                                 <button className="rounded-[36px] px-[5px] py-[15px] bg-[#E672B7] text-[15px]" onClick={() => submit(fileInfo.id)}>Подтвердить</button>
                                             </li>
                                         </>

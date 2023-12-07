@@ -1,0 +1,11 @@
+"<br />
+<b>Warning</b>:  Undefined array key "data" in <b>C:\OSPanel\domains\localhost\user\info.php</b> on line <b>40</b><br />
+<br />
+<b>Warning</b>:  Undefined array key "logo" in <b>C:\OSPanel\domains\localhost\user\info.php</b> on line <b>41</b><br />
+{
+    "status": "success",
+    "message": "\u0414\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u044b \u0443\u0441\u043f\u0435\u0448\u043d\u043e",
+    "login": "321aSG",
+    "data": null,
+    "logo": null
+}"

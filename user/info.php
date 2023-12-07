@@ -18,9 +18,9 @@ function decodeToken($token)
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    
+
     if (!empty($_GET['login'])) {
-        
+
         $login = isset($_GET['login']) ? $_GET['login'] : null;
 
         // Retrieve user data from Firebase or any other storage
@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             // Получаем необходимые поля
             $login = $firstUser['login'];
             $password = $firstUser['password'];
-            $data = $firstUser['data'];
-            $logo = $firstUser['logo'];
+            $data = isset($firstUser['data']) ? $firstUser['data'] : null;
+            $logo = isset($firstUser['logo']) ? $firstUser['logo'] : null;
             // Возвращаем нужные данные
             echo json_encode([
                 'status' => 'success',
@@ -83,8 +83,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                     // Получаем необходимые поля
                     $login = $firstUser['login'];
                     $password = $firstUser['password'];
-                    $data = $firstUser['data'];
-                    $logo = $firstUser['logo'];
+                    $data = isset($firstUser['data']) ? $firstUser['data'] : null;
+                    $logo = isset($firstUser['logo']) ? $firstUser['logo'] : null;
                     // Возвращаем нужные данные
                     echo json_encode([
                         'status' => 'success',

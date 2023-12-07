@@ -3,6 +3,7 @@ import axios from 'axios';
 import logo from '../../img/logo.png';
 import avatar from '../../img/logo.png';
 import arrowDown from '../../img/arrow-down.png';
+import notif from '../../img/notif.png';
 import { Link } from 'react-router-dom';
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -20,7 +21,7 @@ function Header() {
         top: '50px',
         right: '75px',
         width: "100px",
-        zIndex:"999",
+        zIndex: "999",
         border: "1px solid gray"
     }
     const toggleDropdown = () => {
@@ -56,9 +57,9 @@ function Header() {
             <img src={logo} alt="Logo" />
             <div className='flex items-center' style={{ gap: "10px" }}>
                 {userInfo && (
-                    <>
+                    <><Link to="/panel/notification"><img src={notif} alt="" className='w-[40px] h-[40px]' /></Link>
                         <span>{userInfo.login}</span>
-                        <img src={userInfo.logo} alt="Avatar" className="rounded-full h-[75px] w-[75px]" width="75" height="75"  />
+                        <img src={userInfo.logo} alt="Avatar" className="rounded-full h-[75px] w-[75px]" width="75" height="75" />
                     </>
 
                 )}

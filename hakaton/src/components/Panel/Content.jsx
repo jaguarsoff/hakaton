@@ -15,6 +15,8 @@ const Content = () => {
   const [isUploaded, setIsUploaded] = useState(false);
   const [isModerIn, setIsModerIn] = useState(false);
   const [file, setFile] = useState(null);
+  const [userData, setUserData] = useState(null);
+
   useEffect(() => {
     const authToken = Cookies.get('authToken');
 
@@ -49,6 +51,18 @@ const Content = () => {
     } else {
       setIsModerIn(false);
     }
+
+
+    axios.get('/user/infoAll.php').then(response => {
+      const data = response.data.users;
+      console.log(response.data.users)
+      setUserData(data);
+    })
+      .catch(error => {
+        console.error('Error fetching user data:', error);
+      });
+
+
   }, []);
 
   function handleChange(event) {
@@ -70,10 +84,10 @@ const Content = () => {
           Authorization: `Bearer ${authToken}`,
         },
       });
-      if(response.status == "success"){
+      if (response.status == "success") {
         console.log('File uploaded successfully:', response.data);
       }
-      else{
+      else {
         console.log('File uploaded failes:', response.data);
       }
       // You can update state or perform additional actions based on the server response
@@ -146,24 +160,38 @@ const Content = () => {
         </>
       )}
       {isModerIn && (
-        <div className="p-[4em]">
-          <Link to="/panel/profile/b8" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center " style={{ gap: "50px" }}>
-            <div className="w-[100px] h-[100px] flex items-center justify-center"><img src={b8} alt="" className="max-w-[100px] max-h-[100px]" /></div>
-            <h4 className="text-2xl font-semibold">Самый северный акселератор инновационных проектов B8</h4>
-          </Link>
-          <Link to="/panel/profile/samsun" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center " style={{ gap: "50px" }}>
-            <div className="w-[100px] h-[100px] flex items-center justify-center"><img src={Samsung} alt="" className="max-w-[100px] max-h-[100px]" /></div>
-            <h4 className="text-2xl font-semibold">Компания Samsung (в переводе – «Три звезды») основана в Южной Корее в 1938 году</h4>
-          </Link>
-          <Link to="/panel/profile/apple" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center" style={{ gap: "50px" }}>
-            <div className="w-[100px] h-[100px] flex items-center justify-center">
-              <img src={Apple} alt="" className="max-w-[100px] max-h-[100px]" />
-            </div>
-            <h4 className="text-2xl font-semibold">Apple (МФА: [ˈæp(ə)l], «Эпл») — американская корпорация, разработчик персональных и планшетных компьютеров, аудиоплееров, смартфонов, программного обеспечения и цифрового контента</h4>
-          </Link>
+        <div className="p-[4em]" style={{
+          maxHeight: "1000px",
+          overflow: "auto"
+        }}>
+      {userData && Array.isArray(userData) && userData.map((user, index) => (
+        <Link to={`/panel/profile/${user.login}`} className="py-[30px] px-[100px] flex bg-white rounded-[20px] mb-[30px] items-center" style={{ gap: "50px" }} key={index}>
+          <div className="w-[100px] h-[100px] flex items-center justify-center">
+            <img src={user.logo} alt="" className="max-w-[100px] max-h-[100px]" />
+          </div>
+          <h4 className="text-2xl font-semibold">{user.login}</h4>
+        </Link>
+      ))}
+
+
+      <Link to="/panel/profile/b8" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center " style={{ gap: "50px" }}>
+        <div className="w-[100px] h-[100px] flex items-center justify-center"><img src={b8} alt="" className="max-w-[100px] max-h-[100px]" /></div>
+        <h4 className="text-2xl font-semibold">Самый северный акселератор инновационных проектов B8</h4>
+      </Link>
+      <Link to="/panel/profile/samsun" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center " style={{ gap: "50px" }}>
+        <div className="w-[100px] h-[100px] flex items-center justify-center"><img src={Samsung} alt="" className="max-w-[100px] max-h-[100px]" /></div>
+        <h4 className="text-2xl font-semibold">Компания Samsung (в переводе – «Три звезды») основана в Южной Корее в 1938 году</h4>
+      </Link>
+      <Link to="/panel/profile/apple" className="py-[30px] px-[100px] flex  bg-white rounded-[20px] mb-[30px] items-center" style={{ gap: "50px" }}>
+        <div className="w-[100px] h-[100px] flex items-center justify-center">
+          <img src={Apple} alt="" className="max-w-[100px] max-h-[100px]" />
         </div>
-      )}
+        <h4 className="text-2xl font-semibold">Apple (МФА: [ˈæp(ə)l], «Эпл») — американская корпорация, разработчик персональных и планшетных компьютеров, аудиоплееров, смартфонов, программного обеспечения и цифрового контента</h4>
+      </Link>
     </div>
+  )
+}
+    </div >
   );
 }
 
