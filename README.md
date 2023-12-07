@@ -12,7 +12,7 @@
   <p align="center">
     Кейс #2 Мониторинг компаний.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Ветка</strong></a>
+    <a href=""><strong>Ветка</strong></a>
     <br />
     <br />
     <a href="https://github.com/jaguarsoff/hakaton/commits/main">Коммиты</a>
