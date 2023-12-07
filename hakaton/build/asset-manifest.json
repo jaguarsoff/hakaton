@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hakaton/build/static/css/main.ca4ea1a2.css",
+    "main.js": "/hakaton/build/static/js/main.7b3de0b6.js",
+    "static/js/787.739ff246.chunk.js": "/hakaton/build/static/js/787.739ff246.chunk.js",
+    "static/media/back_auth.png": "/hakaton/build/static/media/back_auth.6ded832d6fa16736e32a.png",
+    "static/media/third_svg.png": "/hakaton/build/static/media/third_svg.337923a1659e2ac1b0ef.png",
+    "static/media/fond.png": "/hakaton/build/static/media/fond.9cea835ef9a67a13ceda.png",
+    "static/media/b8.png": "/hakaton/build/static/media/b8.0a7dd2012a4be0311317.png",
+    "static/media/second_svg.png": "/hakaton/build/static/media/second_svg.ad6ffe39962a26bae62f.png",
+    "static/media/tinkoff.png": "/hakaton/build/static/media/tinkoff.af696dcdf6e930682d4e.png",
+    "static/media/first_svg.png": "/hakaton/build/static/media/first_svg.ff1af13d528723a89f3d.png",
+    "static/media/transition.png": "/hakaton/build/static/media/transition.c7054900ac7e1fd62508.png",
+    "static/media/upload.svg": "/hakaton/build/static/media/upload.036d3629aeb42b3354601ede92ff958e.svg",
+    "static/media/folder-open.svg": "/hakaton/build/static/media/folder-open.a76c968e4fbae1d0f036ba58878bf10d.svg",
+    "static/media/logout.svg": "/hakaton/build/static/media/logout.534560f6ed613d7aea781993d661f742.svg",
+    "index.html": "/hakaton/build/index.html",
+    "main.ca4ea1a2.css.map": "/hakaton/build/static/css/main.ca4ea1a2.css.map",
+    "main.7b3de0b6.js.map": "/hakaton/build/static/js/main.7b3de0b6.js.map",
+    "787.739ff246.chunk.js.map": "/hakaton/build/static/js/787.739ff246.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca4ea1a2.css",
+    "static/js/main.7b3de0b6.js"
+  ]
+}

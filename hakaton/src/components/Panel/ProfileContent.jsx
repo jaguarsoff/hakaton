@@ -59,7 +59,7 @@ const ProfileContent = () => {
                 )}
                 {fileInfoList && (
                     <div>
-                        <h2>File Information</h2>
+                        
                         <ul>
                             {fileInfoList.map(fileInfo => (
                                 <li key={fileInfo.id}>
