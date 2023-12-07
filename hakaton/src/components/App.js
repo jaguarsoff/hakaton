@@ -45,7 +45,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/panel" element={isLoggedIn ? <Panel /> : <Navigate to="/" />} />
-        <Route path="/panel/profile" element={isLoggedIn ? <Profile /> : <Navigate to="/" />} />
+        <Route path="/panel/profile/:login" element={isLoggedIn ? <Profile /> : <Navigate to="/" />} />
       </Routes>
     </Router>
   );
