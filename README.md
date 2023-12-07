@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    * [![monorts][logo]]
   </a>
 
   <h3 align="center">MONORTS</h3>
@@ -49,7 +49,7 @@
 
 ### Стек-технологий
 
-Фреймворки и библеотеки, языки.
+Фреймворки и библиотеки, языки.
 
 * [![React][React.js]][React-url]
 * [![PHP][php.net]][php-url]
@@ -73,7 +73,7 @@ _Чтобы запустить бэкенд собиратите проект re
    ```sh
    npm install
    ```
-3. 
+   
    ```sh
    npm run start
    ```
@@ -126,4 +126,5 @@ _Чтобы запустить бэкенд собиратите проект re
 [tailwindcss.com]: https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss
 [tailwind-url]: https://tailwindcss.com
 [firebase.google.com]: https://img.shields.io/badge/firebase?style=for-the-badge&logo=firebase
-[firebase-url]: firebase.google.com
+[firebase-url]: https://firebase.google.com
+[logo]: https://ibb.co/ThS8DSX
