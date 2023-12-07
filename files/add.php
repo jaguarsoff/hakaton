@@ -52,18 +52,19 @@ if (isset($_FILES['file'])) {
         // Move the uploaded file to the specified directory
         if (move_uploaded_file($fileTempName, $destination)) {
             // File upload successful, now save information to Firebase
-            $time = time();  // Get current timestamp
+            $time = date('Y-m-d');  // Get current timestamp
 
             // Your Firebase database reference (update with your actual reference)
             $databaseReference = $database->getReference('files');
-
+            $id = uniqid(uniqid());
             // Create an array with file information
             $fileData = [
+                'id' => $id,
                 'login' => $login,
                 'path' => $destination,
                 'time' => $time,
                 'size_mb' => $fileSize,
-                'status' => 'uploaded',
+                'status' => 'wait',
             ];
 
             // Push the file information to Firebase

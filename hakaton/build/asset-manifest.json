@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hakaton/build/static/css/main.ca4ea1a2.css",
-    "main.js": "/hakaton/build/static/js/main.7b3de0b6.js",
+    "main.css": "/hakaton/build/static/css/main.51ea5851.css",
+    "main.js": "/hakaton/build/static/js/main.6a4bcca6.js",
     "static/js/787.739ff246.chunk.js": "/hakaton/build/static/js/787.739ff246.chunk.js",
     "static/media/back_auth.png": "/hakaton/build/static/media/back_auth.6ded832d6fa16736e32a.png",
     "static/media/third_svg.png": "/hakaton/build/static/media/third_svg.337923a1659e2ac1b0ef.png",
@@ -14,13 +14,16 @@
     "static/media/upload.svg": "/hakaton/build/static/media/upload.036d3629aeb42b3354601ede92ff958e.svg",
     "static/media/folder-open.svg": "/hakaton/build/static/media/folder-open.a76c968e4fbae1d0f036ba58878bf10d.svg",
     "static/media/logout.svg": "/hakaton/build/static/media/logout.534560f6ed613d7aea781993d661f742.svg",
+    "static/media/error.svg": "/hakaton/build/static/media/error.61e43ee5c1042fa7157c8565e7f77d61.svg",
+    "static/media/success.svg": "/hakaton/build/static/media/success.e3aabec76abc6200db8b9fa6e9b474ea.svg",
+    "static/media/wait.svg": "/hakaton/build/static/media/wait.8a04b6a3d0c05b0c8d59e039b38c52dc.svg",
     "index.html": "/hakaton/build/index.html",
-    "main.ca4ea1a2.css.map": "/hakaton/build/static/css/main.ca4ea1a2.css.map",
-    "main.7b3de0b6.js.map": "/hakaton/build/static/js/main.7b3de0b6.js.map",
+    "main.51ea5851.css.map": "/hakaton/build/static/css/main.51ea5851.css.map",
+    "main.6a4bcca6.js.map": "/hakaton/build/static/js/main.6a4bcca6.js.map",
     "787.739ff246.chunk.js.map": "/hakaton/build/static/js/787.739ff246.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca4ea1a2.css",
-    "static/js/main.7b3de0b6.js"
+    "static/css/main.51ea5851.css",
+    "static/js/main.6a4bcca6.js"
   ]
 }
