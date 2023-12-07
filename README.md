@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    * [![monorts][logo]]
+  <a href="github.com/jaguarsoff">
+    img="logo.png"
   </a>
 
   <h3 align="center">MONORTS</h3>
