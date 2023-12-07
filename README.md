@@ -123,9 +123,9 @@ _Чтобы запустить бэкенд собиратите проект re
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[php.net]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png
+[php.net]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
 [php-url]: https://php.net
-[tailwindcss.com]: https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss-1633184775.jpg
+[tailwindcss.com]: https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss
 [tailwind-url]: https://tailwindcss.com
-[firebase.google.com]: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png
+[firebase.google.com]: https://img.shields.io/badge/firebase?style=for-the-badge&logo=firebase
 [firebase-url]: firebase.google.com
