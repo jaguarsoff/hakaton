@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import logo from '../../img/logo_auth.png';
 import back_auth from '../../img/back_auth.png';
-
-function Register() {
+import {Link} from 'react-router-dom'
+function Login() {
   const [formData, setFormData] = useState({
     login: '',
     password: '',
@@ -67,8 +67,8 @@ function Register() {
     params.append('password', formData.password);
 
     try {
-      const response = await axios.post('user/register.php', params);
-      console.log(response);
+      const response = await axios.post('user/login.php', params);
+      console.log(response.data);
       if (response.data.status === 'success') {
         const token = response.data.token;
 
@@ -105,7 +105,7 @@ function Register() {
       <main className="mx-36 h-full rounded-[30px] relative bg-[#E672B6] mb-[20px]">
         <img src={back_auth} alt="" className="w-full" />
         <div className="p-20  bg-white absolute right-[430px] top-[195px] rounded-[30px] flex flex-col">
-          <h3 className="text-5xl font-extrabold mb-24 text-center">Зарегистрироваться</h3>
+          <h3 className="text-5xl font-extrabold mb-24 text-center">Авторизация</h3>
           <form onSubmit={handleSubmit} className='flex flex-col'>
             <div className="mb-8">
               <input
@@ -135,8 +135,9 @@ function Register() {
               <p className="text-red-500 mb-4">{registrationStatus.error}</p>
             )}
             <button className="bg-pink-500 p-8 rounded-[50px] text-3xl font-semibold" type="submit">
-              Создать
+              Войти
             </button>
+              <Link to='/register'></Link>
           </form>
         </div>
       </main>
@@ -144,4 +145,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;
