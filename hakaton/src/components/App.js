@@ -12,6 +12,7 @@ import Profile from './Panel/Profile';
 import Rating from './Panel/Rating';
 import Company from './Panel/Company';
 import Notification from './Panel/Notification';
+import ProfileCompany from './Panel/ProfileCompany';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true); // !value
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/panel/rating" element={isLoggedIn ? <Rating /> : <Navigate to="/" />} />
         <Route path="/panel/notification" element={isLoggedIn ? <Notification /> : <Navigate to="/" />} />
         <Route path="/panel/company" element={isLoggedIn ? <Company /> : <Navigate to="/" />} />
+        <Route path="/panel/company/b8" element={isLoggedIn ? <ProfileCompany /> : <Navigate to="/" />} />
         <Route path="/panel/profile/:login" element={isLoggedIn ? <Profile /> : <Navigate to="/" />} />
       </Routes>
     </Router>

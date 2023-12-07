@@ -1,9 +1,16 @@
 {
   "files": {
-    "main.css": "/hakaton/build/static/css/main.6e5a6608.css",
-    "main.js": "/hakaton/build/static/js/main.4e06d950.js",
+    "main.css": "/hakaton/build/static/css/main.5e93036d.css",
+    "main.js": "/hakaton/build/static/js/main.ff9369a3.js",
     "static/js/787.739ff246.chunk.js": "/hakaton/build/static/js/787.739ff246.chunk.js",
     "static/media/back_auth.png": "/hakaton/build/static/media/back_auth.6ded832d6fa16736e32a.png",
+    "static/media/image 11.png": "/hakaton/build/static/media/image 11.5e9781ea72b858a5820d.png",
+    "static/media/image 12.png": "/hakaton/build/static/media/image 12.930b255066b67dce8144.png",
+    "static/media/image 13.png": "/hakaton/build/static/media/image 13.9d8bbbeebaedb89805eb.png",
+    "static/media/image 16.png": "/hakaton/build/static/media/image 16.22b8066b38ea2fd1e0a4.png",
+    "static/media/image 15.png": "/hakaton/build/static/media/image 15.b4a38547bc70e596f17b.png",
+    "static/media/image 14.png": "/hakaton/build/static/media/image 14.767c69d2168a977aed62.png",
+    "static/media/image 10.png": "/hakaton/build/static/media/image 10.fe6744d0a161d1171c6d.png",
     "static/media/third_svg.png": "/hakaton/build/static/media/third_svg.337923a1659e2ac1b0ef.png",
     "static/media/fond.png": "/hakaton/build/static/media/fond.9cea835ef9a67a13ceda.png",
     "static/media/b8.png": "/hakaton/build/static/media/b8.0a7dd2012a4be0311317.png",
@@ -20,12 +27,12 @@
     "static/media/success.svg": "/hakaton/build/static/media/success.e3aabec76abc6200db8b9fa6e9b474ea.svg",
     "static/media/wait.svg": "/hakaton/build/static/media/wait.8a04b6a3d0c05b0c8d59e039b38c52dc.svg",
     "index.html": "/hakaton/build/index.html",
-    "main.6e5a6608.css.map": "/hakaton/build/static/css/main.6e5a6608.css.map",
-    "main.4e06d950.js.map": "/hakaton/build/static/js/main.4e06d950.js.map",
+    "main.5e93036d.css.map": "/hakaton/build/static/css/main.5e93036d.css.map",
+    "main.ff9369a3.js.map": "/hakaton/build/static/js/main.ff9369a3.js.map",
     "787.739ff246.chunk.js.map": "/hakaton/build/static/js/787.739ff246.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e5a6608.css",
-    "static/js/main.4e06d950.js"
+    "static/css/main.5e93036d.css",
+    "static/js/main.ff9369a3.js"
   ]
 }
