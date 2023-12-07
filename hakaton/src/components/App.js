@@ -8,7 +8,7 @@ import Landing from './Landing';
 import Register from './Panel/register';
 import Login from './Panel/login';
 import Panel from './Panel';
-
+import Profile from './Panel/Profile';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -45,6 +45,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/panel" element={isLoggedIn ? <Panel /> : <Navigate to="/" />} />
+        <Route path="/panel/profile" element={isLoggedIn ? <Profile /> : <Navigate to="/" />} />
       </Routes>
     </Router>
   );

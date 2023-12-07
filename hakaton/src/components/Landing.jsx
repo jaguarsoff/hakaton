@@ -26,7 +26,7 @@ function Landing() {
               «Monorts»: <br />
               Инновации путь в будущее!
             </h1>
-            <Link to="/login" className='button-start mt-8'>Начать работу </Link>
+            <Link to="/register" className='button-start mt-8'>Начать работу </Link>
           </div>
           <div className="right">
             <img src={fond} alt="" width="1200" />
@@ -89,7 +89,7 @@ function Landing() {
           <img src={transitionEnd} alt="" />
         </div>
         <section className='last flex justify-center items-center p-8'>
-          <Link to='/login' className='button-start'>Начать работу </Link>
+          <Link to='/register' className='button-start'>Начать работу </Link>
         </section>
       </main>
     </div>

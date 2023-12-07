@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import logo from '../../img/logo_auth.png';
 import back_auth from '../../img/back_auth.png';
-
+import {Link} from 'react-router-dom'
 function Register() {
   const [formData, setFormData] = useState({
     login: '',
@@ -104,7 +104,7 @@ function Register() {
       </header>
       <main className="mx-36 h-full rounded-[30px] relative bg-[#E672B6] mb-[20px]">
         <img src={back_auth} alt="" className="w-full" />
-        <div className="p-20  bg-white absolute right-[430px] top-[195px] rounded-[30px] flex flex-col">
+        <div className="p-20  bg-white absolute right-[430px] top-[195px] rounded-[30px] flex flex-col" style={{width:"675px"}}>
           <h3 className="text-5xl font-extrabold mb-24 text-center">Зарегистрироваться</h3>
           <form onSubmit={handleSubmit} className='flex flex-col'>
             <div className="mb-8">
@@ -137,6 +137,13 @@ function Register() {
             <button className="bg-pink-500 p-8 rounded-[50px] text-3xl font-semibold" type="submit">
               Создать
             </button>
+            <Link to="/login" style={{
+                fontSize: "30px",
+                textAlign: "center",
+                marginTop: "10px",
+                fontWeight: "600",
+                color: "#918686",
+            }}>Уже зарегистрированы?</Link>
           </form>
         </div>
       </main>
