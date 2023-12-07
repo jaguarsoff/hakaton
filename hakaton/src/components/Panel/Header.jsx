@@ -19,7 +19,9 @@ function Header() {
         position: 'relative',
         top: '50px',
         right: '75px',
-        width: "100px"
+        width: "100px",
+        zIndex:"999",
+        border: "1px solid gray"
     }
     const toggleDropdown = () => {
         setIsDropdownOpen((prev) => !prev);
@@ -34,7 +36,7 @@ function Header() {
         const authToken = document.cookie.replace(/(?:(?:^|.*;\s*)authToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
 
         if (authToken) {
-            axios.get('user/info.php', {
+            axios.get('/user/info.php', {
                 headers: {
                     Authorization: `Bearer ${authToken}`,
                 },
@@ -54,9 +56,13 @@ function Header() {
             <img src={logo} alt="Logo" />
             <div className='flex items-center' style={{ gap: "10px" }}>
                 {userInfo && (
-                    <span>{userInfo.login}</span>
+                    <>
+                        <span>{userInfo.login}</span>
+                        <img src={userInfo.logo} alt="Avatar" className="rounded-full h-[75px] w-[75px]" width="75" height="75"  />
+                    </>
+
                 )}
-                <img src={avatar} alt="Avatar" className="rounded-full" width="75" height="75" />
+
 
                 <div className="dropdown" style={dropdownStyle} onClick={toggleDropdown}>
                     {/* Render dropdown content if the dropdown is open */}
@@ -65,7 +71,7 @@ function Header() {
                             {/* Dropdown content goes here */}
                             <ul>
                                 <li>
-                                    <Link to="/panel/profile">Профиль</Link>
+                                    <Link to={`/panel/profile/${userInfo.login}`}>Профиль</Link>
                                 </li>
                                 <li>
                                     <button onClick={exit}>Выйти</button>

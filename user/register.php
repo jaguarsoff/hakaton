@@ -29,7 +29,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             ->push([
                 'login' => $login,
                 'password' => $hashedPassword,
-                'data' => date('Y-m-d H:i:s')
+                'data' => date('Y-m-d H:i:s'),
+                'logo' => '/files/uploads/logo.png'
             ]);
 
         $tokenPayload = [
