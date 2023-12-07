@@ -54,7 +54,7 @@
 Фреймворки и библеотеки, языки.
 
 * [![React][React.js]][React-url]
-* [![PHP][[php.net]][php-url]
+* [![PHP][php.net]][php-url]
 * [![Tailwind][tailwindcss.com]][tailwind-url]
 * [![Firebase][firebase.google.com]][firebase-url]
 
