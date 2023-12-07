@@ -15,15 +15,13 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Ветка</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Коммиты</a>
+    <a href="https://github.com/jaguarsoff/hakaton/commits/main">Коммиты</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Как запустить?</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Юзерфлоу</a>
+    <a href="https://www.figma.com/file/l995MOpMZFI4u1OqcDSZUn/userflow-(road)?type=design&node-id=22-7&mode=design&t=a9sIJhsAgmV2mylL-0">Юзерфлоу + дизайн сайта</a>
   </p>
 </div>
 
-Посмотреть [ошибки](https://github.com/othneildrew/Best-README-Template/issues).
+Посмотреть [ошибки](https://github.com/jaguarsoff/hakaton/issues) которым нужен фикс.
 
 <!-- ABOUT THE PROJECT -->
 ## monorts-main
