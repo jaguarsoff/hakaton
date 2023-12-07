@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="github.com/jaguarsoff">
+    img="logo.png"
   </a>
 
   <h3 align="center">MONORTS</h3>
@@ -15,15 +15,13 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Ветка</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Коммиты</a>
+    <a href="https://github.com/jaguarsoff/hakaton/commits/main">Коммиты</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Как запустить?</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Юзерфлоу</a>
+    <a href="https://www.figma.com/file/l995MOpMZFI4u1OqcDSZUn/userflow-(road)?type=design&node-id=22-7&mode=design&t=a9sIJhsAgmV2mylL-0">Юзерфлоу + дизайн сайта</a>
   </p>
 </div>
 
-Посмотреть [ошибки](https://github.com/othneildrew/Best-README-Template/issues).
+Посмотреть [ошибки](https://github.com/jaguarsoff/hakaton/issues) которым нужен фикс.
 
 <!-- ABOUT THE PROJECT -->
 ## monorts-main
@@ -51,10 +49,10 @@
 
 ### Стек-технологий
 
-Фреймворки и библеотеки, языки.
+Фреймворки и библиотеки, языки.
 
 * [![React][React.js]][React-url]
-* [![PHP][[php.net]][php-url]
+* [![PHP][php.net]][php-url]
 * [![Tailwind][tailwindcss.com]][tailwind-url]
 * [![Firebase][firebase.google.com]][firebase-url]
 
@@ -75,7 +73,7 @@ _Чтобы запустить бэкенд собиратите проект re
    ```sh
    npm install
    ```
-3. 
+   
    ```sh
    npm run start
    ```
@@ -123,9 +121,10 @@ _Чтобы запустить бэкенд собиратите проект re
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[php.net]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png
+[php.net]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
 [php-url]: https://php.net
-[tailwindcss.com]: https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss-1633184775.jpg
+[tailwindcss.com]: https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss
 [tailwind-url]: https://tailwindcss.com
-[firebase.google.com]: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png
-[firebase-url]: firebase.google.com
+[firebase.google.com]: https://img.shields.io/badge/firebase?style=for-the-badge&logo=firebase
+[firebase-url]: https://firebase.google.com
+[logo]: https://ibb.co/ThS8DSX
